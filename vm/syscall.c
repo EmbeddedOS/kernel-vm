@@ -9,5 +9,5 @@ static int __sys_lava(enum lava_cmd cmd, union lava_attr __user *uattr, unsigned
 
 SYSCALL_DEFINE3(lava, int, cmd, union lava_attr __user *, uattr, unsigned int, size)
 {
-    return __sys_lava(cmd, USER_BPFPTR(uattr), size);
+    return __sys_lava(cmd, uattr, size);
 }
