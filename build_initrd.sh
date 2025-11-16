@@ -2,6 +2,8 @@
 BUSYBOX_PATH=/home/conguyen/repos/personal/busybox-1.36.1
 CURRENT_DIR=$(pwd)
 
+rm -rf rootfs.cpio.gz
+rm -rf rootfs
 mkdir -p rootfs/{bin,sbin,etc,proc,sys,usr/{bin,sbin},dev,lib,var/{log,run}}
 cd rootfs
 
